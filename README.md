@@ -1,10 +1,10 @@
-# VJ Forward Bot
+# Heroku Tech Forward Bot
 
 <b>Auto Restart All User Forwarding After Bot Restarted.</b>
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+VJ+Forward+Bot+!)
 
-## How To Deploy [Video Tutorial](https://youtu.be/A-iIh_5WAlk)
+## How To Deploy [Video Tutorial]()
 
 ## Features
 
@@ -44,4 +44,4 @@ broadcast - broadcast a message to all your users (owner only)
 
 ## Credits
 
-* <b>[Tech VJ](https://youtube.com/@Tech_VJ)</b>
+* <b>[Heroku Tech](https://youtube.com/@herokutech)</b>
