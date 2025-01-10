@@ -1,6 +1,6 @@
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @herokutech
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@herokutech
+# Ask Doubt on telegram @OwnerRocky
 
 import os
 import re 
@@ -25,9 +25,9 @@ from pyrogram.errors import (
     PasswordHashInvalid
 )
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @herokutech
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@herokutech
+# Ask Doubt on telegram @OwnerRocky
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -36,9 +36,9 @@ BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)]\[buttonurl:/{0,2}(.+?)(:same)?])")
 BOT_TOKEN_TEXT = "<b>1) create a bot using @BotFather\n2) Then you will get a message with bot token\n3) Forward that message to me</b>"
 SESSION_STRING_SIZE = 351
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @herokutech
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@herokutech
+# Ask Doubt on telegram @OwnerRocky
 
 class CLIENT: 
   def __init__(self):
@@ -138,9 +138,9 @@ class CLIENT:
      await db.add_userbot(details)
      return True
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @herokutech
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@herokutech
+# Ask Doubt on telegram @OwnerRocky
 
 @Client.on_message(filters.private & filters.command('reset'))
 async def forward_tag(bot, m):
@@ -148,9 +148,9 @@ async def forward_tag(bot, m):
    await db.update_configs(m.from_user.id, default)
    await m.reply("successfully settings reseted ✔️")
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @herokutech
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@herokutech
+# Ask Doubt on telegram @OwnerRocky
 
 @Client.on_message(filters.command('resetall') & filters.user(Config.BOT_OWNER))
 async def resetall(bot, message):
@@ -176,9 +176,9 @@ async def resetall(bot, message):
      await message.reply(ERRORS[:100])
   await sts.edit("completed\n" + TEXT.format(total, success, failed, already))
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @herokutech
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@herokutech
+# Ask Doubt on telegram @OwnerRocky
 
 async def get_configs(user_id):
   configs = await db.get_configs(user_id)
@@ -196,9 +196,9 @@ async def update_configs(user_id, key, value):
      current['filters'][key] = value
   await db.update_configs(user_id, current)
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @herokutech
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@herokutech
+# Ask Doubt on telegram @OwnerRocky
 
 async def iter_messages(
     self,
@@ -224,9 +224,9 @@ async def iter_messages(
                     
                 current += 1
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @herokutech
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@herokutech
+# Ask Doubt on telegram @OwnerRocky
 
 async def get_client(bot_token, is_bot=True):
   if is_bot:
@@ -234,9 +234,9 @@ async def get_client(bot_token, is_bot=True):
   else:
     return Client("USERBOT", Config.API_ID, Config.API_HASH, session_string=bot_token)
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @herokutech
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@herokutech
+# Ask Doubt on telegram @OwnerRocky
 
 def parse_buttons(text, markup=True):
     buttons = []
@@ -260,6 +260,6 @@ def parse_buttons(text, markup=True):
        buttons = InlineKeyboardMarkup(buttons)
     return buttons if buttons else None
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @herokutech
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@herokutech
+# Ask Doubt on telegram @OwnerRocky
